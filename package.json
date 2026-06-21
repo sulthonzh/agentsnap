@@ -7,9 +7,9 @@
     "agentsnap": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "node --test dist/**/*.test.js",
-    "prepublishOnly": "npm run build"
+    "build": "tsc -p tsconfig.build.json",
+    "test": "npm run build && npx tsc && node --test dist/**/*.test.js",
+    "prepublishOnly": "rm -rf dist && npm run build"
   },
   "keywords": [
     "ai",
