@@ -25,7 +25,16 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "dist/",
+    "dist/cli.js",
+    "dist/cli.d.ts",
+    "dist/differ.js",
+    "dist/differ.d.ts",
+    "dist/recorder.js",
+    "dist/recorder.d.ts",
+    "dist/snapshots.js",
+    "dist/snapshots.d.ts",
+    "dist/types.js",
+    "dist/types.d.ts",
     "README.md",
     "LICENSE"
   ],
@@ -40,5 +49,9 @@
   "homepage": "https://github.com/sulthonzh/agentsnap#readme",
   "bugs": {
     "url": "https://github.com/sulthonzh/agentsnap/issues"
+  },
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
   }
 }
